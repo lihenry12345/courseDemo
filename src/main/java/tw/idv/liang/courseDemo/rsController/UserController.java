@@ -68,7 +68,7 @@ public class UserController {
 	}
 	
 	@RequestMapping(value = "/delete/{id}", method=RequestMethod.GET)
-	public void updateUser(@PathVariable int id) {
+	public void updateUser(@PathVariable String id) {
 		try{
 			System.out.println("updateUser");
 			UserService userService = new UserService();

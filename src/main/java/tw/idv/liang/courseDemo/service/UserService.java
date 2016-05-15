@@ -95,14 +95,14 @@ public class UserService {
 		}
 	}
 	
-	public void delete(int id){
+	public void delete(String id){
 		Connection conn = null;
 		try {
 			Util util = new Util();
 			conn = util.GetMySqlConnection();
 			String  sql="delete from user where userId=?";
 			PreparedStatement pstmt = conn.prepareStatement(sql);     
-	        pstmt.setInt(1, id);
+	        pstmt.setString(1, id);
 	        pstmt.executeUpdate();	
 	        pstmt.close();
 		}
