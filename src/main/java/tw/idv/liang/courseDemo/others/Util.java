@@ -11,8 +11,8 @@ public class Util {
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
-			conn =	DriverManager.getConnection("jdbc:mysql://140.115.158.242:3306/coursedemo?" +
-			"user=firstuser&password=lee1960&autoReconnect=true&useUnicode=true&characterEncoding=utf8");
+			conn =	DriverManager.getConnection("jdbc:mysql://localhost:3306/coursedemo?" +
+			"user=testuser&password=12345678&autoReconnect=true&useUnicode=true&characterEncoding=utf8");
 		}
 		catch(Exception x)
 		{
